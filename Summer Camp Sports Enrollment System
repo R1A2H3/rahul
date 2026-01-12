@@ -1,0 +1,55 @@
+# Summer Camp Sports Enrollment System
+
+This is a full-stack web application that allows students to enroll in sports programs offered by a summer camp.
+
+The project was built as part of an internship assignment to demonstrate backend API development, database integration, and frontend interaction.
+
+---
+
+## 🚀 Features
+
+- View available sports
+- Enroll a student into a selected sport
+- Automatically manage available slots
+- REST API with interactive Swagger documentation
+
+---
+
+## 🛠 Tech Stack
+
+### Backend
+- FastAPI (Python)
+- Google Firestore (NoSQL Database)
+- Firebase Admin SDK
+
+### Frontend
+- React (CodeSandbox)
+
+### Tools
+- Replit (Backend hosting)
+- Swagger UI (API testing & documentation)
+
+---
+
+## 📂 API Endpoints
+
+### Sports
+- `POST /sports` – Add a new sport
+- `GET /sports` – Get all sports
+
+### Enrollment
+- `POST /enroll` – Enroll a student
+- `GET /enrollments` – View all enrollments
+
+---
+
+## 🗄 Database Structure (Firestore)
+
+### sports collection
+```json
+{
+  "name": "Cricket",
+  "age_group": "10-15",
+  "fee": 2000,
+  "slots": 5
+}
